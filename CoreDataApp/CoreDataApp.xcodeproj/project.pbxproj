@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		86B5E6D128CF6BEA00765846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6D028CF6BEA00765846 /* AppDelegate.swift */; };
 		86B5E6D328CF6BEA00765846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6D228CF6BEA00765846 /* SceneDelegate.swift */; };
-		86B5E6D528CF6BEA00765846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6D428CF6BEA00765846 /* ViewController.swift */; };
 		86B5E6D828CF6BEA00765846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B5E6D628CF6BEA00765846 /* Main.storyboard */; };
 		86B5E6DB28CF6BEA00765846 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6D928CF6BEA00765846 /* CoreDataApp.xcdatamodeld */; };
 		86B5E6DD28CF6BEB00765846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B5E6DC28CF6BEB00765846 /* Assets.xcassets */; };
 		86B5E6E028CF6BEB00765846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B5E6DE28CF6BEB00765846 /* LaunchScreen.storyboard */; };
+		86B5E6FB28CF72FA00765846 /* CategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6FA28CF72FA00765846 /* CategoriesTVC.swift */; };
+		86B5E6FD28CF730800765846 /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5E6FC28CF730800765846 /* TodoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86B5E6CD28CF6BEA00765846 /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B5E6D028CF6BEA00765846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B5E6D228CF6BEA00765846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86B5E6D428CF6BEA00765846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86B5E6D728CF6BEA00765846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86B5E6DA28CF6BEA00765846 /* CoreDataApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataApp.xcdatamodel; sourceTree = "<group>"; };
 		86B5E6DC28CF6BEB00765846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B5E6DF28CF6BEB00765846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B5E6E128CF6BEB00765846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B5E6FA28CF72FA00765846 /* CategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTVC.swift; sourceTree = "<group>"; };
+		86B5E6FC28CF730800765846 /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,65 @@
 		86B5E6CF28CF6BEA00765846 /* CoreDataApp */ = {
 			isa = PBXGroup;
 			children = (
-				86B5E6D028CF6BEA00765846 /* AppDelegate.swift */,
-				86B5E6D228CF6BEA00765846 /* SceneDelegate.swift */,
-				86B5E6D428CF6BEA00765846 /* ViewController.swift */,
-				86B5E6D628CF6BEA00765846 /* Main.storyboard */,
+				86B5E6FE28CF7CDC00765846 /* Model */,
+				86B5E6F628CF721D00765846 /* Flow */,
+				86B5E6F728CF722100765846 /* Views */,
+				86B5E6F528CF721100765846 /* Delegates */,
 				86B5E6DC28CF6BEB00765846 /* Assets.xcassets */,
-				86B5E6DE28CF6BEB00765846 /* LaunchScreen.storyboard */,
 				86B5E6E128CF6BEB00765846 /* Info.plist */,
-				86B5E6D928CF6BEA00765846 /* CoreDataApp.xcdatamodeld */,
 			);
 			path = CoreDataApp;
+			sourceTree = "<group>";
+		};
+		86B5E6F528CF721100765846 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6D028CF6BEA00765846 /* AppDelegate.swift */,
+				86B5E6D228CF6BEA00765846 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		86B5E6F628CF721D00765846 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6F828CF72E400765846 /* CategoriesVC */,
+				86B5E6F928CF72E900765846 /* TodoVC */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		86B5E6F728CF722100765846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6D628CF6BEA00765846 /* Main.storyboard */,
+				86B5E6DE28CF6BEB00765846 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86B5E6F828CF72E400765846 /* CategoriesVC */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6FA28CF72FA00765846 /* CategoriesTVC.swift */,
+			);
+			path = CategoriesVC;
+			sourceTree = "<group>";
+		};
+		86B5E6F928CF72E900765846 /* TodoVC */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6FC28CF730800765846 /* TodoVC.swift */,
+			);
+			path = TodoVC;
+			sourceTree = "<group>";
+		};
+		86B5E6FE28CF7CDC00765846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86B5E6D928CF6BEA00765846 /* CoreDataApp.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B5E6FD28CF730800765846 /* TodoVC.swift in Sources */,
 				86B5E6DB28CF6BEA00765846 /* CoreDataApp.xcdatamodeld in Sources */,
-				86B5E6D528CF6BEA00765846 /* ViewController.swift in Sources */,
+				86B5E6FB28CF72FA00765846 /* CategoriesTVC.swift in Sources */,
 				86B5E6D128CF6BEA00765846 /* AppDelegate.swift in Sources */,
 				86B5E6D328CF6BEA00765846 /* SceneDelegate.swift in Sources */,
 			);
